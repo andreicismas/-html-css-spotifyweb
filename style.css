@@ -124,15 +124,42 @@ header .nav_style{
     .nav_right li span{
         padding-right:  0px; 
     }
+}
+/* end header */
 
+
+
+/* start main/asaid */
+
+.big_section{
     
+    width: 100vw;
+    height: calc(100vh - 66px);
+   display: flex;
+}
+
+aside{
+  
+    background-color: rgb(10, 10, 10);
+    width: 210px;
+    height:100%;
+} 
+
+main{
+    background-color:wheat;
+    width:calc(100vw - 210px);
+    overflow: auto;
+}
+
+.list_grow{
+    flex-grow: 1;
 }
 
 /* non used class */
 
-/* .border{
+.border{
     border:1px solid red ;
-} */
+}
 
 /* utility class */
 .pl_10{
