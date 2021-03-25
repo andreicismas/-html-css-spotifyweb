@@ -15,11 +15,16 @@ header .nav_style{
     color: #878787;
 }
 
+.nav_left_icon>*{
+    padding-right: 8px;
+    
+}
+
 .nav_style ul li> .p_nav_style{
     line-height: 1;
     margin: 0;
-    margin-right: 10px;
-    margin-left: -10px;
+    margin-right: 8px;
+    margin-left: -8px;
 }
 
 .img_nav_style>img{
@@ -42,7 +47,7 @@ header .nav_style{
 }
 
 .nav_right{
-    width: 100px;
+    width: 150px;
 }
 
 .nav_right li{
@@ -62,6 +67,7 @@ header .nav_style{
     width: 70%;
     border: 2px solid;
     border-radius: 2px;
+    color: gray;
 }
 
 .short_bar,
@@ -69,16 +75,18 @@ header .nav_style{
     width: 30%;
     color: azure;
     border: 2px solid;
-    border-radius: 2px;
+    border-radius: px;
+}
+
+.nav_right li span{
+    padding-right:  8px; 
 }
  
 
-@media screen and (max-width:550px){
+@media screen and (max-width:650px){
     .nav_style .nav_left li,
     .nav_style .nav_right li{
-        align-self:center;
         padding:4px 4px ;
-        color: #878787;
     }
 
     .img_nav_style>img{
@@ -87,15 +95,20 @@ header .nav_style{
     }
 
     .nav_style ul li> .p_nav_style{
+        font-size: 10px;
         line-height: 1;
         margin: 0;
         margin-right: 0px;
         margin-left: -4px;
     }
 
+    .nav_left_icon{
+        font-size: 10px;
+    }
+
     .xs_mq_padding_1{
         font-size: 20px;
-        padding:0px;
+        padding: 0;
     }
 
     .nav_middle
@@ -105,15 +118,21 @@ header .nav_style{
     }
 
     .nav_right{
-        width: 120px;
+        width:100px;
     }
+
+    .nav_right li span{
+        padding-right:  0px; 
+    }
+
+    
 }
 
 /* non used class */
 
-.border{
+/* .border{
     border:1px solid red ;
-}
+} */
 
 /* utility class */
 .pl_10{
