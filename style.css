@@ -36,9 +36,17 @@ header .nav_style{
     display: inline-block;
 }
 
+.progress_bar,
+.progress_bar{
+    vertical-align: text-bottom;
+}
+
 .nav_right{
-    width: 10%;
-    min-width: 100px;
+    width: 100px;
+}
+
+.nav_right li{
+    width: 100%;
 }
 
 .progress_bar{
@@ -49,17 +57,56 @@ header .nav_style{
     flex-grow: 1;
 }
 
-.long_bar{
+.long_bar,
+.long_vol{
     width: 70%;
     border: 2px solid;
     border-radius: 2px;
 }
 
-.short_bar{
+.short_bar,
+.short_vol{
     width: 30%;
     color: azure;
     border: 2px solid;
     border-radius: 2px;
+}
+ 
+
+@media screen and (max-width:550px){
+    .nav_style .nav_left li,
+    .nav_style .nav_right li{
+        align-self:center;
+        padding:4px 4px ;
+        color: #878787;
+    }
+
+    .img_nav_style>img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav_style ul li> .p_nav_style{
+        line-height: 1;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: -4px;
+    }
+
+    .xs_mq_padding_1{
+        font-size: 20px;
+        padding:0px;
+    }
+
+    .nav_middle
+    .xs_mq_padding_0{
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .nav_right{
+        width: 120px;
+    }
 }
 
 /* non used class */
