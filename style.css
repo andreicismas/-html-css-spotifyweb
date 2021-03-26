@@ -163,6 +163,13 @@ header .nav_style{
    display: flex;
 }
 
+.gray_color{
+    color: gray;
+    display: block;
+    font-size: 25px;
+}
+
+
 aside{
   
     background-color: rgb(10, 10, 10);
@@ -177,15 +184,54 @@ aside{
 
 .list_grow ul{
     list-style-type: none;   
+    padding-left:0  ;
+}
+
+.list_grow ul .li_grow{
+    padding-top: 20px;
 }
 
 .img_under_logo{
     width: 30px;
     height: 30px;
     display: block;
-    color: green;
+   
+}
+
+.name_pl{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my_play_list{
+    padding-top: 10px;
+}
+
+.add_play_cube{
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+    color: black;
+}
+
+.add_size{
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+}
+.add_play{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.li_grow{
+    color: gray;
 
 }
+
+
+
+
 
 /* main parth */
 
@@ -203,8 +249,8 @@ main{
 }
 
 /* utility class */
-.color_gray{
-    color: rgba(167, 20, 20, 0.712);
+.pt_20{
+    padding-top: 20px;
 }
 
 .pl_10{
