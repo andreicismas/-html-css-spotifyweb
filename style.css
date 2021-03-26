@@ -20,7 +20,24 @@ header .nav_style{
     
 }
 
-.nav_style ul li> .p_nav_style{
+.icon_1:hover,
+.icon_2:hover{
+    color: white;
+}
+
+.song_hover:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.short_bar:hover,
+.short_vol:hover{
+    border: 3px solid;
+}
+
+
+
+.nav_style ul li> .p_nav_style,.song_hover{
     line-height: 1;
     margin: 0;
     margin-right: 8px;
@@ -124,6 +141,13 @@ header .nav_style{
     .nav_right li span{
         padding-right:  0px; 
     }
+   section.big_section{
+        width: 100vw;
+        height: calc(100vh - 47px);
+       display: flex;
+    }
+
+    
 }
 /* end header */
 
@@ -131,10 +155,11 @@ header .nav_style{
 
 /* start main/asaid */
 
+
 .big_section{
     
     width: 100vw;
-    height: calc(100vh - 66px);
+    height: calc(100vh - 62px);
    display: flex;
 }
 
@@ -145,15 +170,31 @@ aside{
     height:100%;
 } 
 
+.list_grow{
+    flex-grow: 1;
+    overflow: auto; 
+}
+
+.list_grow ul{
+    list-style-type: none;   
+}
+
+.img_under_logo{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: green;
+
+}
+
+/* main parth */
+
 main{
     background-color:wheat;
     width:calc(100vw - 210px);
     overflow: auto;
 }
 
-.list_grow{
-    flex-grow: 1;
-}
 
 /* non used class */
 
@@ -162,6 +203,10 @@ main{
 }
 
 /* utility class */
+.color_gray{
+    color: rgba(167, 20, 20, 0.712);
+}
+
 .pl_10{
     padding-left: 10px;
 }
