@@ -165,8 +165,12 @@ header .nav_style{
 
 .gray_color{
     color: gray;
-    display: block;
+
     font-size: 25px;
+}
+
+.pos_rel{
+    position: unset;
 }
 
 
