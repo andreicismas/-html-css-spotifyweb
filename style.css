@@ -85,6 +85,7 @@ header .nav_style{
     border: 2px solid;
     border-radius: 2px;
     color: gray;
+    
 }
 
 .short_bar,
@@ -163,10 +164,22 @@ header .nav_style{
    display: flex;
 }
 
-.gray_color{
-    color: gray;
+.logo_page{
+    position: relative;
+}
 
+.logo_search,
+.logo_book{
+    color: gray;
     font-size: 25px;
+}
+.green_line{
+    border: 2px solid greenyellow;
+    height: 30px;
+    position: absolute;
+    top: 94px;
+    left: 0px;
+
 }
 
 .pos_rel{
@@ -175,7 +188,7 @@ header .nav_style{
 
 
 aside{
-  
+    position: relative;
     background-color: rgb(10, 10, 10);
     width: 210px;
     height:100%;
@@ -237,6 +250,7 @@ aside{
 
 
 
+
 /* main parth */
 
 main{
@@ -277,5 +291,13 @@ main{
 
 .color_white{
     color: white;
+}
+
+.display_inline_block{
+    display: inline-block;
+}
+
+.vertical_align{
+    vertical-align: bottom;
 }
 
