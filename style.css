@@ -51,8 +51,13 @@ header .nav_style{
     height: 50px;
 }
 
+.play_bg:hover{
+    font-size: 30px;
+}
+
 .play_bg{
-    font-size: 25px;
+    font-size: 28px;
+
 }
 
 .progress_bar,
@@ -60,7 +65,7 @@ header .nav_style{
     display: inline-block;
 }
 
-.progress_bar,
+
 .progress_bar{
     vertical-align: text-bottom;
 }
@@ -74,6 +79,7 @@ header .nav_style{
 }
 
 .progress_bar{
+    position: relative;
     width:35%;
 }
 
@@ -87,9 +93,25 @@ header .nav_style{
     border: 2px solid;
     border-radius: 2px;
     color: gray;
-    
 }
 
+.short_bar:hover .green_circle,
+.short_vol:hover .green_circle{
+    display: inline;
+
+}
+
+.green_circle{
+    position: absolute;
+    display: none;
+    bottom: 2px;
+    left: 28%;
+    background-color:white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+}
 
 
 .short_bar,
@@ -197,7 +219,7 @@ header .nav_style{
 aside{
     position: relative;
     background-color: rgb(10, 10, 10);
-    width: 210px;
+    min-width: 210px;
     height:100%;
 } 
 
@@ -302,6 +324,13 @@ main{
 
 }
 
+.btn_upgrade:hover{
+    width: 190px;
+    height: 40px;
+    border-radius: 20px;
+    top: 18%;
+}
+
 .btn_upgrade {
     position: relative;
     top: 25%;
@@ -314,6 +343,31 @@ main{
     float: right;
 }
 
+/* container songs */
+
+.section_subtitle{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section_subtitle>*{
+    display: inline-block;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+}
+
+
+.green_underline{
+    position: relative;
+    right: 65px;
+    top: 8px;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    width: 40px;
+    display: inline-block;
+    
+}
 
 
 
@@ -358,12 +412,6 @@ main{
 
 .vertical_align{
     vertical-align: bottom;
-}
-
-
-.white_grow{
-    color: gray;
-    
 }
 
 
