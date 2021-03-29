@@ -342,6 +342,7 @@ main{
     border-radius: 15px;
     border: solid 1px white;
     float: right;
+    margin-right: 30px;
 }
 
 /* container songs */
@@ -370,33 +371,46 @@ main{
     
 }
 
-.first_row,
-.second_row,
-.third_row{
+.first_row{
  flex-shrink: 1;
- justify-content:stretch ;
+ justify-content:start ;
  flex-wrap: wrap;
  
+}
+
+.second_row,
+.third_row{
+    justify-content: start;
 }
 
 .section_overflow{
     overflow:inherit;
 }
 
+.img_hover{
+    w
+}
+
+.img_hover:hover{
+   
+}
+
+
+
 .first_img_container{
     flex-basis: calc(100%/6);
-    flex-grow: 1;
+    
 }
 .first_img_container img{
     padding-right: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 
 @media screen and (max-width:991px){
+    
     .first_img_container{
         flex-basis: calc(100%/4);
-     
         flex-grow: 0;
         order: 1;
     }
