@@ -347,6 +347,15 @@ main{
  
 }
 
+.play_hover_circle{
+    width:calc(100% - 10px);
+    display: none;
+    position: absolute;
+    background-color: rgba(54, 54, 54, 0.726);
+    border-radius: 50%;
+    height: -webkit-fill-available;
+}
+
 
 
 .play_hover{  
@@ -354,9 +363,14 @@ main{
    display: none;
    position: absolute;
    background-color: rgba(54, 54, 54, 0.726);
+
    height: -webkit-fill-available;
 }
 
+.play_hover_circle i{
+    font-size: 85px;
+    padding: 30%; 
+}
 
 .play_hover i{
     font-size: 85px;
@@ -369,7 +383,7 @@ main{
 
 .first_row .start_hover:hover .play_hover,
 .second_row .start_hover:hover .play_hover,
-.third_row .start_hover:hover .play_hover {
+.third_row .start_hover:hover .play_hover_circle {
    display: block;
 } 
 
@@ -401,8 +415,6 @@ main{
         
     }
 
-  
-
     .big_section .hidden_xs_logo{
         width: 30px;
     }
@@ -413,6 +425,16 @@ main{
 
     .user_style{
         margin-bottom: 10px;
+    }
+
+    .play_hover_circle i {
+        font-size: 85px;
+        padding: 24%;
+    }
+
+    .play_hover i {
+        font-size: 85px;
+        padding: 24%;
     }
 }
 
@@ -518,6 +540,17 @@ main{
         left: 0px;
         background-color: greenyellow;
     }
+
+    .play_hover_circle i {
+        font-size: 85px;
+        padding: 20%;
+    }
+    .play_hover i {
+        font-size: 85px;
+        padding: 20%;
+    }
+
+    
     
 }    
 
