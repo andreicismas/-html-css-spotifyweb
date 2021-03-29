@@ -57,6 +57,7 @@ header .nav_style{
 
 .play_bg{
     font-size: 28px;
+    padding: 5px 0;
 
 }
 
@@ -343,7 +344,7 @@ main{
 .third_row{
  flex-shrink: 1;
  flex-wrap: wrap;
- justify-content: space-around;
+ 
 }
 
 
