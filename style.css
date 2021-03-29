@@ -127,57 +127,6 @@ header .nav_style{
 }
  
 
-@media screen and (max-width:650px){
-    .nav_style .nav_left li,
-    .nav_style .nav_right li{
-        padding:4px 4px ;
-    }
-
-    .img_nav_style>img{
-        width: 35px;
-        height: 35px;
-    }
-
-    .nav_style ul li> .p_nav_style{
-        font-size: 10px;
-        line-height: 1;
-        margin: 0;
-        margin-right: 0px;
-        margin-left: -4px;
-    }
-
-    .nav_left_icon{
-        font-size: 10px;
-    }
-
-    .xs_mq_padding_1{
-        font-size: 20px;
-        padding: 0;
-    }
-
-    .nav_middle
-    .xs_mq_padding_0{
-        font-size: 15px;
-        padding: 0;
-    }
-
-    .nav_right{
-        width:100px;
-    }
-
-    .nav_right li span{
-        padding-right:  0px; 
-    }
-   section.big_section{
-        width: 100vw;
-        height: calc(100vh - 47px);
-       display: flex;
-    }
-
-    
-
-    
-}
 /* end header */
 
 
@@ -220,7 +169,7 @@ header .nav_style{
 aside{
     position: relative;
     background-color: rgb(10, 10, 10);
-    min-width: 210px;
+    min-width: 200px;
     height:100%;
 } 
 
@@ -241,7 +190,7 @@ aside{
 .img_under_logo{
     width: 30px;
     height: 30px;
-    display: block;
+    /* display: block; */
     
 }
 
@@ -313,7 +262,7 @@ main{
 
 .upgrade_part{
     height: 80px;
-    width: calc(100vw - 210px);
+    width: 100%;
     background-color: rgba(27, 26, 26, 0.74);
 
 }
@@ -359,51 +308,76 @@ main{
     margin: 0;
 }
 
+.green_underline_container{
+    position: relative;
+}
+
 
 .green_underline{
-    position: relative;
-    right: 65px;
-    top: 8px;
+    position: absolute;
+    right: 32px;
+    top: 30px;
     border: 2px solid greenyellow;
     color: greenyellow;
     width: 40px;
-    display: inline-block;
+   
     
-}
-
-.first_row{
- flex-shrink: 1;
- justify-content:start ;
- flex-wrap: wrap;
- 
-}
-
-.second_row,
-.third_row{
-    justify-content: start;
 }
 
 .section_overflow{
     overflow:inherit;
 }
 
-.img_hover{
-    w
+.container_hover{
+    position: relative;
 }
 
-.img_hover:hover{
+.first_row,
+.second_row,
+.third_row{
+ flex-shrink: 1;
+ justify-content:start ;
+ flex-wrap: wrap;
+
+ 
+}
+
+
+
+.play_hover{
+    display: none;
+   position: absolute;
+   width: calc(100% - 10px);
+
+   background-color: rgba(128, 128, 128, 0.726);
    
 }
+
+.second_row .play_hover {
+    height:  89%;
+}
+
+.play_hover i{
+    font-size: 70px; 
+    
+}
+
+.first_row .start_hover:hover .play_hover,
+.second_row .start_hover:hover .play_hover,
+.third_row .start_hover:hover .play_hover {
+   display: block;
+} 
 
 
 
 .first_img_container{
     flex-basis: calc(100%/6);
-    
+  
 }
 .first_img_container img{
     padding-right: 10px;
-    width: 80%;
+    width: 100%;
+   
 }
 
 
@@ -412,19 +386,115 @@ main{
     .first_img_container{
         flex-basis: calc(100%/4);
         flex-grow: 0;
-        order: 1;
+        
+    }
+
+  
+
+    .big_section .hidden_xs_logo{
+        width: 30px;
+    }
+
+    .hidden_xs_installa{
+        margin-bottom: 20px;
+    }
+
+    .user_style{
+        margin-bottom: 10px;
     }
 }
 
 
-@media screen and (max-width:650px){
+
+@media screen and (max-width:767px){
     .first_img_container{
         flex-basis: calc(100%/2);
         flex-grow: 0;
-        order: 1;
+        
     }
+
+    .hidden_xs_logo{
+        width: 30px;
+    }
+
+    .hidden_xs_installa{
+        margin-bottom: 20px;
+    }
+
+    .user_style{
+        margin-bottom: 10px;
+    }
+
+    aside{
+        position: relative;
+        background-color: rgb(10, 10, 10);
+        min-width: 60px;
+        height:100%;
+       
+    } 
 }
 
+@media screen and (max-width:550px){
+    .nav_style .nav_left li,
+    .nav_style .nav_right li{
+        padding:4px 4px ;
+    }
+
+    .img_nav_style>img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav_style ul li> .p_nav_style{
+        font-size: 10px;
+        line-height: 1;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: -4px;
+    }
+    .nav_style ul li> .p_nav_style,.song_hover{
+        font-size: 10px;
+        line-height: 1;
+        margin: 0;
+        margin-right: 0px;
+        margin-left: -4px;
+    }
+
+    .nav_left_icon{
+        font-size: 10px;
+    }
+
+    .xs_mq_padding_1{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .nav_middle
+    .xs_mq_padding_0{
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .nav_right{
+        width:100px;
+    }
+
+    .nav_right li span{
+        padding-right:  0px; 
+    }
+   section.big_section{
+        width: 100vw;
+        height: calc(100vh - 47px);
+       display: flex;
+    }
+
+    .big_section {
+    width: 100vw;
+    height: calc(100vh - 51px);
+    display: flex;
+}
+    
+}
 
 
 
