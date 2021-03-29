@@ -190,9 +190,15 @@ aside{
 .img_under_logo{
     width: 30px;
     height: 30px;
-    /* display: block; */
-    
 }
+.opacity_aside{
+    opacity: 30%;
+}
+
+.opacity_aside:hover{
+    opacity: 100%;
+}
+
 
 .name_pl{
     font-size: 22px;
