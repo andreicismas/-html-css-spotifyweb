@@ -19,6 +19,8 @@ main.big_section{
 .aside_style{
     min-width: 200px;
     background-color: black ;
+    display: flex;
+    flex-direction: column;
 }
 
 .section_style{
@@ -60,13 +62,100 @@ main.big_section{
 
 /* end section/btn/parth */
 
+/* start aside section/ */
 
+.xs_visible_logo{
+    width: 40px
+}
+
+.visible_logo{
+    width: 130px;
+}
+
+.opacity_aside:hover{
+    opacity: 100%;
+}
+
+.container_home{
+    position: relative;
+}
+
+.green_home{
+    position: absolute;
+    left: -10px;
+    border: 3px solid greenyellow;
+    height: 80%;
+    background-color: greenyellow;
+
+}
+
+/* aside/playlist parth */
+
+.title_pl{
+    color: white;
+}
+
+.cube_pl{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.644);
+}
+
+.crea_pl{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.cube_pl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_pl_style{
+    font-size: 25px;
+    color: black;
+}
+
+.container_pl{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.container_aside_list ul{
+    padding-left: 0;
+}
+
+.li_aside_style{
+    list-style-type: none;
+}
 
 
 
 
 
 /* utiliti class used */
+.icon_text_size{
+    font-size: 15px;
+    vertical-align: sub;
+}
+
+.white_hover:hover{
+    color: white;
+}
+
+.icon_width{
+    width: 40px;
+}
+
+.icon_opacity{
+    opacity: 40%;
+}
+
+.display_inline_block{
+    display: inline-block;
+}
 
 .text_white{
     color: white;
