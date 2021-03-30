@@ -24,8 +24,9 @@ main.big_section{
 }
 
 .section_style{
+    overflow: auto;
     width: 100vw;
-    background-color: grey;
+    background-color: #141922;
     
 }
 
@@ -145,6 +146,11 @@ main.big_section{
 /* start section/section_style*/
 
 
+.titles_section{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
 
 
 
