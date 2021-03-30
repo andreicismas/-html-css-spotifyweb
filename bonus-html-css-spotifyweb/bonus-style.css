@@ -131,6 +131,28 @@ main.big_section{
     list-style-type: none;
 }
 
+.down_style{
+    font-size: 20px;
+}
+
+.user_style{
+    font-size: 22px;
+}
+
+/*stop aside/playlist parth */
+
+
+/* start section/section_style*/
+
+
+
+
+
+
+
+
+/* stop section/section_style*/
+
 
 
 
@@ -196,6 +218,3 @@ main.big_section{
 
 /* utiliti class non-used  */
 
-.border{
-    border: 1px solid violet;
-}
