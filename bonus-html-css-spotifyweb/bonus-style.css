@@ -166,7 +166,9 @@ main.big_section{
     background-color: greenyellow;
 }   
 
- .container_img_row_1{
+ .container_img_row_1,
+ .container_img_row_2,
+ .container_img_row_3{
     flex-wrap: wrap;
    
 }
@@ -191,8 +193,8 @@ main.big_section{
     height: 100%;
    
     background-color: rgba(0, 0, 0, 0.651); 
-}
 
+}
 .hover_start{
     position: relative;
 }
@@ -206,6 +208,15 @@ main.big_section{
   width: 100%;
 }
 
+
+.container_img_row_3 .hover_start>img{
+    border-radius: 50%;
+}
+
+.container_img_row_3 .hover_start:hover .container_play_hover{
+    display: flex;
+    border-radius: 50%;
+}
 
 
 @media screen and (max-width:991px){
@@ -239,11 +250,6 @@ main.big_section{
         flex-grow: 0;
     }
 }
-
-
-
-
-
 
 /* stop section/section_style*/
 
